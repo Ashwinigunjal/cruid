@@ -1,0 +1,2 @@
+import tkinter
+dir(tkinter)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student data</title>
+	<style type="text/css">
+		table,th,td{
+			border-bottom: 1px solid #ddd;
+			padding :15px;
+		
+		}
+		th{
+			background-color: blue;
+			text-align: center;
+			color:white;
+		}
+		td{
+			color : green;
+			text-align: center;
+		}
+		tr:nth-child(even){
+			background-color: #f2f2f2;
+		}
+
+
+	</style>
+</head>
+<body>
+<table style="width: 70%">
+	<tr>
+		<th><B>Subject</B></th>
+		<th><B>Marks</B></th>
+	</tr>
+	{% for key,val in result.items():%}
+	<tr>
+		<td>{{key}}</td>
+		<td>{{val}}</td>
+	</tr>
+	{% endfor %}
+
+</table>
+
+</body>
+</html>
